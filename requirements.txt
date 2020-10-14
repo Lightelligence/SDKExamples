@@ -1,0 +1,2 @@
+lightelligence-sdk
+azure-storage-blob

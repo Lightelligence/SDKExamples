@@ -1,0 +1,45 @@
+trigger:
+  - master
+pr:
+  - master
+
+pool: PlatformAgents
+
+jobs:
+  - job: "LintCheck"
+
+    steps:
+      - bash: |
+          ./install_conda_environment.sh update
+
+        displayName: "Update conda env"
+
+      - bash: |
+          source ${HOME}/.bashrc lightelligence-sdk
+          flake8 --count ./
+
+        displayName: "Python Flake8 Lint check"
+
+      - bash: |
+          source ${HOME}/.bashrc lightelligence-sdk
+          yapf --diff --recursive ./
+
+        displayName: "Python YAPF Formatting check"
+
+      - bash: |
+          source ${HOME}/.bashrc lightelligence-sdk
+          isort --check-only --diff ./
+
+        displayName: "Python Import check"
+
+      - bash: |
+          source ${HOME}/.bashrc lightelligence-sdk
+          prettier --check "./**/*.yml"
+
+        displayName: "YML Lint Check"
+
+      - bash: |
+          source ${HOME}/.bashrc lightelligence-sdk
+          prettier --check "./**/*.md"
+
+        displayName: "Markdown Lint Check"

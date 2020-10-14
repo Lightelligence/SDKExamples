@@ -1,0 +1,63 @@
+trigger:
+  - master
+pr: none
+
+pool: MachAgents
+
+variables:
+  - name: GITHUB_DIR
+    value: github
+    readonly: true
+  - name: BENCHMARK_OUTPUT_DIR
+    value: benchmarks/data
+    readonly: true
+  - name: BENCHMARK_DATA_DIR
+    value: /data/algo/test_data
+    readonly: true
+
+jobs:
+  - job: "PushToGitHub"
+
+    steps:
+      - bash: |
+          ./install_conda_environment.sh update
+
+        displayName: "Update conda env"
+
+      - bash: |
+          rm -rf $(GITHUB_DIR)
+          mkdir $(GITHUB_DIR)
+          rm -rf $(BENCHMARK_OUTPUT_DIR)
+          mkdir -p $(BENCHMARK_OUTPUT_DIR)
+
+        displayName: "Initialize Directories"
+
+      - bash: |
+          # Run benchmarks, this will update README.md
+          source ${HOME}/.bashrc lightelligence-sdk
+          python ./builds/run_benchmarks.py \
+          --output_dir=$(pwd)/$(BENCHMARK_OUTPUT_DIR) \
+          --benchmark_data_dir=$(BENCHMARK_DATA_DIR)
+
+        displayName: "Run Benchmarks"
+
+      - bash: |
+          source ${HOME}/.bashrc lightelligence-sdk
+
+          # Create a new repo, push to master on github
+          cp -r ./* $(GITHUB_DIR)
+          cp .gitignore $(GITHUB_DIR)
+          cd $(GITHUB_DIR)
+          git init
+          git remote add origin git@github.com:Lightelligence/SDKExamples.git
+          git add .
+          git add -f $(BENCHMARK_OUTPUT_DIR)
+          git commit -m "update SDKExamples from Azure"
+          git push origin master --force
+
+          # Tag the version
+          VERSION=$(pip show lightelligence-sdk | grep Version | cut -d' ' -f2)
+          git tag -f -a ${VERSION} -m "version ${VERSION}"
+          git push origin ${VERSION} --force
+
+        displayName: "Push to GitHub"

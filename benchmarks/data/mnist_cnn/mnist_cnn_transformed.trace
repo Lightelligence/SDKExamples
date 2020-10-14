@@ -1,0 +1,1814 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 1,
+            "args": {
+                "name": "INSTRUCTIONS - OPU Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 2,
+            "args": {
+                "name": "INSTRUCTIONS - OPU Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 3,
+            "args": {
+                "name": "INSTRUCTIONS - CPU Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 4,
+            "args": {
+                "name": "INSTRUCTIONS - CPU Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 5,
+            "args": {
+                "name": "ITX 0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 6,
+            "args": {
+                "name": "ITX 0 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 7,
+            "args": {
+                "name": "ITX 1 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 8,
+            "args": {
+                "name": "ITX 1 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 9,
+            "args": {
+                "name": "ITX 2 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 10,
+            "args": {
+                "name": "ITX 2 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 11,
+            "args": {
+                "name": "ITX 3 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 12,
+            "args": {
+                "name": "ITX 3 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 13,
+            "args": {
+                "name": "DRAM 0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 14,
+            "args": {
+                "name": "DRAM 0 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 15,
+            "args": {
+                "name": "DRAM 1 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 16,
+            "args": {
+                "name": "DRAM 1 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 17,
+            "args": {
+                "name": "DRAM 2 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 18,
+            "args": {
+                "name": "DRAM 2 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 19,
+            "args": {
+                "name": "DRAM 3 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 20,
+            "args": {
+                "name": "DRAM 3 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 21,
+            "args": {
+                "name": "IO PORT 0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 22,
+            "args": {
+                "name": "IO PORT 0 Tensors"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "reshape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 14,
+            "dur": 26,
+            "args": {
+                "name": "[2657] - Reshape",
+                "op": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 1,
+            "ts": 28,
+            "dur": 18,
+            "args": {
+                "name": "[2659] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "move",
+            "pid": 1,
+            "tid": 0,
+            "ts": 54,
+            "dur": 1177,
+            "args": {
+                "name": "[2658] - input_example_tensor_cast_0_move_inp_edge",
+                "op": "move",
+                "input0": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 1,
+            "ts": 64,
+            "dur": 5,
+            "args": {
+                "name": "[2660] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "bundle [conv2d, vv_add]",
+            "pid": 1,
+            "tid": 2,
+            "ts": 69,
+            "dur": 287,
+            "args": {
+                "name": "[2661] - add",
+                "op": "bundle [conv2d, vv_add]",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "sv_max",
+            "pid": 1,
+            "tid": 1,
+            "ts": 370,
+            "dur": 197,
+            "args": {
+                "name": "[2663] - Relu",
+                "op": "sv_max",
+                "input0": "bundle"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "pool",
+            "pid": 1,
+            "tid": 1,
+            "ts": 572,
+            "dur": 215,
+            "args": {
+                "name": "[2664] - MaxPool",
+                "op": "pool",
+                "input0": "sv_max"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 1,
+            "ts": 801,
+            "dur": 69,
+            "args": {
+                "name": "[2665] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 1,
+            "ts": 880,
+            "dur": 5,
+            "args": {
+                "name": "[2666] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "conv2d",
+            "pid": 1,
+            "tid": 2,
+            "ts": 885,
+            "dur": 160,
+            "args": {
+                "name": "[2667] - Conv2D_1",
+                "op": "conv2d",
+                "input0": "apw",
+                "input1": "pool"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1059,
+            "dur": 69,
+            "args": {
+                "name": "[2668] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1138,
+            "dur": 5,
+            "args": {
+                "name": "[2669] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "conv2d",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1143,
+            "dur": 160,
+            "args": {
+                "name": "[2670] - Conv2D_1",
+                "op": "conv2d",
+                "input0": "apw",
+                "input1": "pool"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1245,
+            "dur": 69,
+            "args": {
+                "name": "[2671] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1324,
+            "dur": 5,
+            "args": {
+                "name": "[2672] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "conv2d",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1329,
+            "dur": 160,
+            "args": {
+                "name": "[2673] - Conv2D_1",
+                "op": "conv2d",
+                "input0": "apw",
+                "input1": "pool"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1343,
+            "dur": 69,
+            "args": {
+                "name": "[2674] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1499,
+            "dur": 5,
+            "args": {
+                "name": "[2675] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "conv2d",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1504,
+            "dur": 160,
+            "args": {
+                "name": "[2676] - Conv2D_1",
+                "op": "conv2d",
+                "input0": "apw",
+                "input1": "pool"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1518,
+            "dur": 69,
+            "args": {
+                "name": "[2677] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1674,
+            "dur": 5,
+            "args": {
+                "name": "[2678] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "conv2d",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1679,
+            "dur": 160,
+            "args": {
+                "name": "[2679] - Conv2D_1",
+                "op": "conv2d",
+                "input0": "apw",
+                "input1": "pool"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1693,
+            "dur": 69,
+            "args": {
+                "name": "[2680] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1849,
+            "dur": 5,
+            "args": {
+                "name": "[2681] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "conv2d",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1854,
+            "dur": 160,
+            "args": {
+                "name": "[2682] - Conv2D_1",
+                "op": "conv2d",
+                "input0": "apw",
+                "input1": "pool"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1868,
+            "dur": 21,
+            "args": {
+                "name": "[2683] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2024,
+            "dur": 5,
+            "args": {
+                "name": "[2684] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "bundle [conv2d, vv_add]",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2029,
+            "dur": 161,
+            "args": {
+                "name": "[2685] - add_1",
+                "op": "bundle [conv2d, vv_add]",
+                "input0": "apw",
+                "input1": "pool",
+                "input2": "conv2d",
+                "input3": "conv2d",
+                "input4": "conv2d",
+                "input5": "conv2d",
+                "input6": "conv2d",
+                "input7": "conv2d"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "sv_max",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2043,
+            "dur": 99,
+            "args": {
+                "name": "[2687] - Relu_1",
+                "op": "sv_max",
+                "input0": "bundle"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2156,
+            "dur": 69,
+            "args": {
+                "name": "[2690] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "pool",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2204,
+            "dur": 117,
+            "args": {
+                "name": "[2688] - MaxPool_1",
+                "op": "pool",
+                "input0": "sv_max"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "reshape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2335,
+            "dur": 26,
+            "args": {
+                "name": "[2689] - Reshape_1",
+                "op": "reshape",
+                "input0": "pool"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2345,
+            "dur": 5,
+            "args": {
+                "name": "[2691] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2364,
+            "dur": 69,
+            "args": {
+                "name": "[2693] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2378,
+            "dur": 20,
+            "args": {
+                "name": "[2692] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2443,
+            "dur": 5,
+            "args": {
+                "name": "[2694] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2448,
+            "dur": 20,
+            "args": {
+                "name": "[2695] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2462,
+            "dur": 69,
+            "args": {
+                "name": "[2696] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2541,
+            "dur": 5,
+            "args": {
+                "name": "[2697] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2546,
+            "dur": 20,
+            "args": {
+                "name": "[2698] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2560,
+            "dur": 69,
+            "args": {
+                "name": "[2699] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2639,
+            "dur": 5,
+            "args": {
+                "name": "[2700] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2644,
+            "dur": 20,
+            "args": {
+                "name": "[2701] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2658,
+            "dur": 69,
+            "args": {
+                "name": "[2702] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2737,
+            "dur": 5,
+            "args": {
+                "name": "[2703] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2742,
+            "dur": 20,
+            "args": {
+                "name": "[2704] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2756,
+            "dur": 69,
+            "args": {
+                "name": "[2705] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2835,
+            "dur": 5,
+            "args": {
+                "name": "[2706] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2840,
+            "dur": 20,
+            "args": {
+                "name": "[2707] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2854,
+            "dur": 69,
+            "args": {
+                "name": "[2708] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2933,
+            "dur": 5,
+            "args": {
+                "name": "[2709] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 2938,
+            "dur": 20,
+            "args": {
+                "name": "[2710] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 2952,
+            "dur": 69,
+            "args": {
+                "name": "[2711] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3031,
+            "dur": 5,
+            "args": {
+                "name": "[2712] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3036,
+            "dur": 20,
+            "args": {
+                "name": "[2713] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3050,
+            "dur": 69,
+            "args": {
+                "name": "[2714] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3129,
+            "dur": 5,
+            "args": {
+                "name": "[2715] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3134,
+            "dur": 20,
+            "args": {
+                "name": "[2716] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3148,
+            "dur": 69,
+            "args": {
+                "name": "[2717] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3227,
+            "dur": 5,
+            "args": {
+                "name": "[2718] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3232,
+            "dur": 20,
+            "args": {
+                "name": "[2719] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3246,
+            "dur": 69,
+            "args": {
+                "name": "[2720] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3325,
+            "dur": 5,
+            "args": {
+                "name": "[2721] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3330,
+            "dur": 20,
+            "args": {
+                "name": "[2722] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3344,
+            "dur": 69,
+            "args": {
+                "name": "[2723] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3423,
+            "dur": 5,
+            "args": {
+                "name": "[2724] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3428,
+            "dur": 20,
+            "args": {
+                "name": "[2725] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3442,
+            "dur": 69,
+            "args": {
+                "name": "[2726] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3521,
+            "dur": 5,
+            "args": {
+                "name": "[2727] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3526,
+            "dur": 20,
+            "args": {
+                "name": "[2728] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3540,
+            "dur": 69,
+            "args": {
+                "name": "[2729] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3619,
+            "dur": 5,
+            "args": {
+                "name": "[2730] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3624,
+            "dur": 20,
+            "args": {
+                "name": "[2731] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3638,
+            "dur": 69,
+            "args": {
+                "name": "[2732] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3717,
+            "dur": 5,
+            "args": {
+                "name": "[2733] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3722,
+            "dur": 20,
+            "args": {
+                "name": "[2734] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3736,
+            "dur": 69,
+            "args": {
+                "name": "[2735] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3815,
+            "dur": 5,
+            "args": {
+                "name": "[2736] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3820,
+            "dur": 20,
+            "args": {
+                "name": "[2737] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3834,
+            "dur": 69,
+            "args": {
+                "name": "[2738] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3913,
+            "dur": 5,
+            "args": {
+                "name": "[2739] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 3918,
+            "dur": 20,
+            "args": {
+                "name": "[2740] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 3932,
+            "dur": 69,
+            "args": {
+                "name": "[2741] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4011,
+            "dur": 5,
+            "args": {
+                "name": "[2742] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4016,
+            "dur": 20,
+            "args": {
+                "name": "[2743] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4030,
+            "dur": 69,
+            "args": {
+                "name": "[2744] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4109,
+            "dur": 5,
+            "args": {
+                "name": "[2745] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4114,
+            "dur": 20,
+            "args": {
+                "name": "[2746] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4128,
+            "dur": 69,
+            "args": {
+                "name": "[2747] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4207,
+            "dur": 5,
+            "args": {
+                "name": "[2748] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4212,
+            "dur": 20,
+            "args": {
+                "name": "[2749] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4226,
+            "dur": 69,
+            "args": {
+                "name": "[2750] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4305,
+            "dur": 5,
+            "args": {
+                "name": "[2751] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4310,
+            "dur": 20,
+            "args": {
+                "name": "[2752] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4324,
+            "dur": 69,
+            "args": {
+                "name": "[2753] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4403,
+            "dur": 5,
+            "args": {
+                "name": "[2754] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4408,
+            "dur": 20,
+            "args": {
+                "name": "[2755] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4422,
+            "dur": 69,
+            "args": {
+                "name": "[2756] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4501,
+            "dur": 5,
+            "args": {
+                "name": "[2757] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4506,
+            "dur": 20,
+            "args": {
+                "name": "[2758] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4520,
+            "dur": 69,
+            "args": {
+                "name": "[2759] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4599,
+            "dur": 5,
+            "args": {
+                "name": "[2760] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "matmul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4604,
+            "dur": 20,
+            "args": {
+                "name": "[2761] - MatMul",
+                "op": "matmul",
+                "input0": "apw",
+                "input1": "reshape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4618,
+            "dur": 37,
+            "args": {
+                "name": "[2762] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4665,
+            "dur": 5,
+            "args": {
+                "name": "[2763] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "bundle [matmul, vv_add, sv_max]",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4670,
+            "dur": 22,
+            "args": {
+                "name": "[2764] - Relu_2",
+                "op": "bundle [matmul, vv_add, sv_max]",
+                "input0": "apw",
+                "input1": "reshape",
+                "input2": "matmul",
+                "input3": "matmul",
+                "input4": "matmul",
+                "input5": "matmul",
+                "input6": "matmul",
+                "input7": "matmul",
+                "input8": "matmul",
+                "input9": "matmul",
+                "input10": "matmul",
+                "input11": "matmul",
+                "input12": "matmul",
+                "input13": "matmul",
+                "input14": "matmul",
+                "input15": "matmul",
+                "input16": "matmul",
+                "input17": "matmul",
+                "input18": "matmul",
+                "input19": "matmul",
+                "input20": "matmul",
+                "input21": "matmul",
+                "input22": "matmul",
+                "input23": "matmul",
+                "input24": "matmul",
+                "input25": "matmul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ldw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4684,
+            "dur": 69,
+            "args": {
+                "name": "[2767] - unknown",
+                "op": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "apw",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4763,
+            "dur": 5,
+            "args": {
+                "name": "[2768] - unknown",
+                "op": "apw",
+                "input0": "ldw"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "bundle [matmul, vv_add]",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4768,
+            "dur": 21,
+            "args": {
+                "name": "[2769] - BiasAdd",
+                "op": "bundle [matmul, vv_add]",
+                "input0": "apw",
+                "input1": "bundle"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "exp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4803,
+            "dur": 2,
+            "args": {
+                "name": "[2771] - softmax_tensor_exp",
+                "op": "exp",
+                "input0": "bundle"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "reduce_sum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4817,
+            "dur": 2,
+            "args": {
+                "name": "[2772] - softmax_tensor_reduce_sum",
+                "op": "reduce_sum",
+                "input0": "exp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "vv_div",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4831,
+            "dur": 2,
+            "args": {
+                "name": "[2773] - softmax_tensor",
+                "op": "vv_div",
+                "input0": "exp",
+                "input1": "reduce_sum"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "move",
+            "pid": 1,
+            "tid": 0,
+            "ts": 4845,
+            "dur": 177,
+            "args": {
+                "name": "[2774] - BiasAdd",
+                "op": "move",
+                "input0": "bundle"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "move",
+            "pid": 1,
+            "tid": 1,
+            "ts": 4859,
+            "dur": 177,
+            "args": {
+                "name": "[2775] - softmax_tensor",
+                "op": "move",
+                "input0": "vv_div"
+            }
+        }
+    ]
+}
