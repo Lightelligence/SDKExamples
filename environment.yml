@@ -1,0 +1,13 @@
+name: lightelligence-sdk
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+  - nodejs
+  - pip
+  - pip:
+      - -r file:requirements.txt
+      - isort == 5.0.4
+      - yapf
+      - flake8
+      - flake8-quotes
