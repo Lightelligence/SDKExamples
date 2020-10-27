@@ -1,0 +1,2 @@
+azure-storage-blob==12.5.0
+lightelligence-sdk==0.1.12
